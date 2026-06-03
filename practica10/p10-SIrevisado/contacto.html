@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ana Balbaneda Palau" />
+    <meta name="description" content="Formulario de contacto de la Enciclopedia Médica Ilustrada." />
+    <link rel="stylesheet" href="css_estilo/estilo.css">
+
+    <link rel="stylesheet" href="css_estilo/impresion.css" media="print">
+
+    <link rel="alternate stylesheet" href="css_estilo/noche.css" title="Modo Noche">
+    <link rel="alternate stylesheet" href="css_estilo/contraste.css" title="Alto Contraste">
+    <link rel="alternate stylesheet" href="css_estilo/letragrande.css" title="Letra Grande">
+    <link rel="alternate stylesheet" href="css_estilo/contraste_letragrande.css" title="Alto Contraste y Letra Grande">
+    
+    <title>Contacto | Enciclopedia Médica Ilustrada</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Enciclopedia Médica Ilustrada</a></h1>
+        <p>Información de salud para usted</p>
+        <p> ------------- </p>
+        <p>Estás en: <a href="index.html">Inicio</a> -> Contacto</p>
+    </header>
+
+    <nav>
+        <h2>Menú principal</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscador.html">Buscador avanzado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="anatomia.html">Anatomía interactiva</a></li>
+            <li><a href="recursos.html">Recursos adicionales</a></li>
+            <li><a href="evaluacion.html">Evaluación de salud</a></li>
+            <li><a href="mapa_sitio.html">Evaluación de salud</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Contacte con nosotros</h2>
+            
+            <p>Por favor, complete el siguiente formulario. Los campos marcados como <strong>(Requerido)</strong> son obligatorios para poder procesar su consulta.</p>
+
+            <form action="contact_resp.html" method="GET">
+                
+                <p>
+                    <label for="asunto">Asunto (Requerido):</label><br>
+                    <input type="text" id="asunto" name="asunto" required>
+                </p>
+
+                <p>
+                    <label for="comentario">Comentario o pregunta (Requerido):</label><br>
+                    <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <label for="perfil">Yo soy:</label><br>
+                    <select id="perfil" name="perfil">
+                        <option value="paciente">Paciente</option>
+                        <option value="cientifico">Científico</option>
+                        <option value="medico">Médico</option>
+                        <option value="educador">Educador</option>
+                        <option value="fabricante">Fabricante</option>
+                        <option value="periodista">Periodista</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="fecha_nac">Fecha de nacimiento:</label><br>
+                    <input type="date" id="fecha_nac" name="fecha_nac" autocomplete="bday">
+                </p>
+
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="sexo_hombre" name="sexo" value="hombre">
+                    <label for="sexo_hombre">Hombre</label><br>
+                    
+                    <input type="radio" id="sexo_mujer" name="sexo" value="mujer">
+                    <label for="sexo_mujer">Mujer</label><br>
+                    
+                    <input type="radio" id="sexo_otro" name="sexo" value="otro">
+                    <label for="sexo_otro">Otro</label>
+                </fieldset>
+
+                <p>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                </p>
+
+                <p>
+                    <input type="checkbox" id="suscripcion" name="suscripcion" value="si">
+                    <label for="suscripcion">Deseo recibir más información</label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar consulta</button>
+                </p>
+
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Realizado por: Ana Balbaneda</p>
+        <p>&copy; 2026 - Enciclopedia Médica Ilustrada</p>
+        <p><a href="index.html">Volver a la Página Principal</a></p>
+        <p><a href="mapa_sitio.html">Mapa del sitio</a>| <a href="accesibilidad.html">Declaración de accesibilidad</a></p>
+    </footer>
+
+</body>
+</html>
