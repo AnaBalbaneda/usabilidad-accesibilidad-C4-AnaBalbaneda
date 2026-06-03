@@ -1,0 +1,18 @@
+/* ESTILO: LETRA GRANDE */
+
+/* Aumentamos drásticamente el tamaño base de toda la web */
+body {
+    font-size: 150% !important; 
+    line-height: 1.8 !important; /* Más espacio entre líneas para que no se amontone */
+    text-align: left;
+}
+
+/* Ajustamos los botones del menú para que la letra grande quepa bien */
+nav ul li a {
+    padding: 15px 25px;
+    font-size: 1.1em;
+}
+
+main p { 
+    max-width: 80ch; 
+}

@@ -1,0 +1,32 @@
+/* ESTILO: CONTRASTE + LETRA GRANDE*/
+
+/* --- PARTE DE CONTRASTE --- */
+:root {
+    --color-principal: #ffffff;
+    --color-secundario: #ffff00;
+    --color-fondo: #000000;
+    --color-blanco: #000000;
+    --color-foco: #ff00ff;
+    --sombra-suave: none;
+}
+a { text-decoration: underline !important; font-weight: bold; }
+main, table, th, td, header, nav, footer { border: 2px solid #ffffff !important; }
+
+table, thead, tbody, tr, th, td {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body, main, article, section, p, h1, h2, h3, ul, li {
+    color: #e2e8f0 !important;
+}
+
+/* --- PARTE DE LETRA GRANDE --- */
+body {
+    font-size: 150% !important; 
+    line-height: 1.8 !important;
+}
+nav ul li a {
+    padding: 15px 25px;
+    font-size: 1.1em;
+}

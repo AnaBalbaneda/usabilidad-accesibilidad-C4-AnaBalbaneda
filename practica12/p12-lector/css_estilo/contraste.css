@@ -1,0 +1,29 @@
+/* ESTILO: ALTO CONTRASTE*/
+:root {
+    --color-principal: #ffffff;  /* Texto blanco puro */
+    --color-secundario: #ffff00; /* Enlaces y detalles en amarillo chillón */
+    --color-fondo: #000000;      /* Fondo negro puro */
+    --color-blanco: #000000;     /* Las cajas también serán negras */
+    --color-foco: #ff00ff;       /* Un magenta brillante para el foco del teclado */
+    --sombra-suave: none;        /* Quitamos sombras porque emborronan la vista */
+}
+
+/* Forzamos que los enlaces siempre estén subrayados para distinguirlos mejor */
+a {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+
+/* Ponemos bordes muy marcados a los contenedores y tablas para que se vea la estructura */
+main, table, th, td, header, nav, footer {
+    border: 2px solid #ffffff !important;
+}
+
+table, thead, tbody, tr, th, td {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body, main, article, section, p, h1, h2, h3, ul, li {
+    color: #e2e8f0 !important;
+}

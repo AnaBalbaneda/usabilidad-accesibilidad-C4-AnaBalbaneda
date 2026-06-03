@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ana Balbaneda Palau" />
+    <meta name="description" content="Formulario de evaluación de hábitos de salud." />
+    <link rel="stylesheet" href="css_estilo/estilo.css" >
+
+    <link rel="stylesheet" href="css_estilo/impresion.css" media="print">
+
+    <link rel="alternate stylesheet" href="css_estilo/noche.css" title="Modo Noche">
+    <link rel="alternate stylesheet" href="css_estilo/contraste.css" title="Alto Contraste">
+    <link rel="alternate stylesheet" href="css_estilo/letragrande.css" title="Letra Grande">
+    <link rel="alternate stylesheet" href="css_estilo/contraste_letragrande.css" title="Alto Contraste y Letra Grande">
+    
+    <title>Evaluación de Salud | Enciclopedia Médica Ilustrada</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Enciclopedia Médica Ilustrada</a></h1>
+        <p>Información de salud para usted</p>
+        <p> ------------- </p>
+        <p>Estás en: <a href="index.html">Inicio</a> -> Evaluación de salud</p>
+    </header>
+
+    <nav>
+        <h2>Menú principal</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscador.html">Buscador avanzado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="anatomia.html">Anatomía interactiva</a></li>
+            <li><a href="recursos.html">Recursos adicionales</a></li>
+            <li><a href="evaluacion.html">Evaluación de salud</a></li>
+            <li><a href="mapa_sitio.html">Mapa del sitio</a></li>
+           
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Cuestionario de Hábitos de Salud</h2>
+            <p>Por favor, rellene el siguiente cuestionario para evaluar su estilo de vida. Los datos son confidenciales.</p>
+
+            <p><strong>Nota importante:</strong> Todos los campos marcados con un asterisco (<em>*</em>) son <strong>obligatorios</strong>.</p>
+
+            <form action="evaluacion_resp.html" method="get">
+
+                <fieldset>
+                    <legend>Datos Personales Básicos</legend>
+
+                    <p>
+                        <label for="correo">Correo electrónico (<em>*</em>):</label><br>
+                        <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                    </p>
+
+                    <p>
+                        <label for="fecha_nac">Fecha de nacimiento (<em>*</em>):</label><br>
+                        <input type="date" id="fecha_nac" name="fecha_nac" required>
+                    </p>
+
+                    <p>
+                        <label for="codigo_paciente">Código de Paciente (Opcional):</label><br>
+                        <small>Formato requerido: Tres letras mayúsculas seguidas de un guion y cuatro números (Ejemplo: ABC-1234).</small><br>
+                        <input type="text" id="codigo_paciente" name="codigo_paciente" pattern="[A-Z]{3}-[0-9]{4}" placeholder="ABC-1234">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Métricas de Salud</legend>
+
+                    <p>
+                        <label for="peso">Peso actual en kg (<em>*</em>):</label><br>
+                        <input type="number" id="peso" name="peso" min="30" max="250" step="0.5" required>
+                    </p>
+
+                    <p>
+                        <label for="estres">Nivel de estrés percibido esta semana (del 1 al 10):</label><br>
+                        <span>1 (Muy bajo)</span>
+                        <input type="range" id="estres" name="estres" min="1" max="10">
+                        <span>10 (Muy alto)</span>
+                    </p>
+
+                    <p>
+                        <label for="color_animo">Seleccione un color que represente su estado de ánimo hoy:</label><br>
+                        <input type="color" id="color_animo" name="color_animo" value="#3498db">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Enviar Evaluación">
+                    <input type="reset" value="Borrar datos">
+                </p>
+
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Realizado por: Ana Balbaneda Palau</p>
+        <p>&copy; 2026 - Enciclopedia Médica Ilustrada</p>
+        <p><a href="index.html">Volver a la Página Principal</a></p>
+        <p><a href="mapa_sitio.html">Mapa del sitio</a>| <a href="accesibilidad.html">Declaración de accesibilidad</a></p>
+    </footer>
+
+</body>
+</html>
