@@ -1,0 +1,34 @@
+/* DISEÑO ADAPTATIVO (MÓVILES Y TABLETS)*/
+
+@media (max-width: 768px) {
+    /* Reducimos los márgenes enormes en móviles para aprovechar la pantalla */
+    main {
+        margin: 15px 10px;
+        padding: 20px;
+    }
+
+    /* Hacemos la cabecera más compacta */
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* El menú de navegación lo ponemos en vertical en móviles */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Las tablas pueden desbordarse en móviles, así que permitimos scroll horizontal */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

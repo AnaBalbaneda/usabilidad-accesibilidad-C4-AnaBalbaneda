@@ -1,0 +1,145 @@
+/* HOJA DE ESTILOS PRINCIPAL*/
+
+@import url("variables.css");
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    font-family: var(--fuente-principal);
+    line-height: 1.7; /* Más espacio entre líneas para que respire el texto */
+}
+
+/* Tipografía de títulos */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+/* MAQUETACIÓN GENERAL */
+
+/* Cabecera blanca con sombra sutil y una línea de color arriba */
+header {
+    background-color: var(--color-blanco);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: var(--sombra-suave);
+    border-top: 5px solid var(--color-secundario);
+}
+
+header a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+/* Contenedor principal tipo "tarjeta" */
+main {
+    max-width: 1000px; /* Evita que el texto ocupe toda la pantalla en monitores grandes */
+    margin: 40px auto; /* Lo centra horizontalmente */
+    padding: 40px;
+    background-color: var(--color-blanco);
+    border-radius: var(--borde-redondeado); /* Esquinas modernas */
+    box-shadow: var(--sombra-suave); /* Sombra elegante */
+}
+
+/* Pie de página discreto */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #64748b;
+}
+
+/* ACCESIBILIDAD E INTERACTIVIDAD (Obligatorio) */
+
+/* Estilo base de los enlaces */
+a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Hace que el cambio de color sea suave */
+}
+
+/*  Efecto al pasar el ratón */
+a:hover {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+/*Indicador visual del foco para navegación por teclado */
+a:focus, input:focus, button:focus {
+    outline: 3px solid var(--color-secundario);
+    background-color: var(--color-foco);
+    color: var(--color-principal);
+    border-radius: 4px;
+}
+
+/* MENÚ DE NAVEGACIÓN E ÍNDICES */
+
+/* Damos margen y alineamos con la caja principal */
+nav, .indice-letras {
+    max-width: 1000px; /* Misma anchura que el <main> */
+    margin: 20px auto; /* Centrado en la pantalla */
+    padding: 0 40px; /* Separación de 40px de los bordes laterales */
+}
+
+/* Convertimos la lista aburrida en botones modernos horizontales */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Si no caben en la pantalla, bajan de línea solos */
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 15px;
+}
+
+/* Estilo tipo "botón" para los enlaces del menú y del índice */
+nav ul li a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--color-blanco);
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+    font-weight: 500;
+}
+
+/* Efecto al pasar el ratón por los botones */
+nav ul li a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    transform: translateY(-2px); /* Se levanta un poquito */
+    box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.3); /* Sombra azulada */
+    text-decoration: none;
+}
+
+/* Para el índice alfabético (separar las letras) */
+nav a {
+    margin-right: 10px;
+    line-height: 2;
+}
+
+/* NLACE "SALTAR AL CONTENIDO"*/
+.saltar-contenido {
+    display: block;
+    background-color: var(--color-secundario); /* Lo ponemos azul para que encaje con el diseño moderno */
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.saltar-contenido:hover,
+.saltar-contenido:focus {
+    background-color: var(--color-principal); /* Se oscurece al pasar el ratón o seleccionarlo con teclado */
+    color: var(--color-foco); /* La letra se pone amarilla para destacar el foco */
+    text-decoration: none;
+}
