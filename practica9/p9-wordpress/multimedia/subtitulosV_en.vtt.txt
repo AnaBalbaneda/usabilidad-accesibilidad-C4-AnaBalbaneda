@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:15.000
+Hello and welcome to this virtual tour of the Illustrated Medical Encyclopedia. Today we will explore how to navigate our platform.
+
+2
+00:00:15.000 --> 00:00:35.000
+On our website, we have a clear navigation menu. If we access the site map or the alphabetical browser, we can find detailed articles.
+
+3
+00:00:35.000 --> 00:00:55.000
+One of the most important features is its inclusive design. The user can activate alternative stylesheets from their browser, such as High Contrast.
+
+4
+00:00:55.000 --> 00:01:15.000
+In addition to web text, our platform offers downloadable complementary resources, such as our basic guide in PDF format, always warning of its file size.
+
+5
+00:01:15.000 --> 00:01:30.000
+The Illustrated Medical Encyclopedia is designed so that anyone can learn to take care of their health. Thank you very much for your attention.
