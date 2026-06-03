@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ana Balbaneda Palau" />
+    <meta name="description" content="Buscador avanzado de la Enciclopedia Médica Ilustrada." />
+    <link rel="stylesheet" href="css_estilo/estilo.css">
+    
+    <link rel="stylesheet" href="css_estilo/impresion.css" media="print">
+
+    <link rel="alternate stylesheet" href="css_estilo/noche.css" title="Modo Noche">
+    <link rel="alternate stylesheet" href="css_estilo/contraste.css" title="Alto Contraste">
+    <link rel="alternate stylesheet" href="css_estilo/letragrande.css" title="Letra Grande">
+    <link rel="alternate stylesheet" href="css_estilo/contraste_letragrande.css" title="Alto Contraste y Letra Grande">
+    
+    <title>Buscador Avanzado | Enciclopedia Médica Ilustrada</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Enciclopedia Médica Ilustrada</a></h1>
+        <p>Información de salud para usted</p>
+        <p> ------------- </p>
+        <p>Estás en: <a href="index.html">Inicio</a> -> Buscador Avanzado</p>
+    </header>
+
+    <nav>
+        <h2>Menú principal</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscador.html">Buscador avanzado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="anatomia.html">Anatomía interactiva</a></li>
+            <li><a href="recursos.html">Recursos adicionales</a></li>
+            <li><a href="evaluacion.html">Evaluación de salud</a></li>
+            <li><a href="mapa_sitio.html">Evaluación de salud</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Buscador avanzado de enfermedades</h2>
+            
+            <p>Utilice este formulario para buscar artículos específicos. Puede rellenar uno o varios campos. El campo marcado como <strong>(Requerido)</strong> es obligatorio. Para seleccionar varias opciones en las listas, mantenga pulsada la tecla Ctrl (o Cmd en Mac) mientras hace clic.</p>
+
+            <form action="buscador_resp.html" method="GET">
+                
+                <p>
+                    <label for="descripcion">Descripción (Requerido):</label><br>
+                    <input type="text" id="descripcion" name="descripcion" required>
+                </p>
+
+                <p>
+                    <label for="causas">Causas:</label><br>
+                    <input type="text" id="causas" name="causas">
+                </p>
+
+                <p>
+                    <label for="sintomas">Síntomas (puede seleccionar varios):</label><br>
+                    <select id="sintomas" name="sintomas" multiple size="5">
+                        <option value="fiebre">Fiebre</option>
+                        <option value="vomito">Vómito</option>
+                        <option value="diarrea">Diarrea</option>
+                        <option value="dolor_muscular">Dolor muscular</option>
+                        <option value="tos">Tos</option>
+                        <option value="fatiga">Fatiga extrema</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pruebas">Pruebas y exámenes (puede seleccionar varias):</label><br>
+                    <select id="pruebas" name="pruebas" multiple size="5">
+                        <option value="analisis_sangre">Análisis de sangre</option>
+                        <option value="ecografia">Ecografía</option>
+                        <option value="radiografia">Radiografía</option>
+                        <option value="tomografia">Tomografía</option>
+                        <option value="ultrasonido">Ultrasonido</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="tratamiento">Tratamiento:</label><br>
+                    <input type="text" id="tratamiento" name="tratamiento">
+                </p>
+
+                <fieldset>
+                    <legend>Expectativas (Pronóstico):</legend>
+                    <input type="radio" id="exp_negativas" name="expectativas" value="negativas">
+                    <label for="exp_negativas">Negativas</label><br>
+                    
+                    <input type="radio" id="exp_sin_definir" name="expectativas" value="sin_definir">
+                    <label for="exp_sin_definir">Sin definir</label><br>
+                    
+                    <input type="radio" id="exp_positivas" name="expectativas" value="positivas">
+                    <label for="exp_positivas">Positivas</label>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Buscar artículos</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Realizado por: Ana Balbaneda</p>
+        <p>&copy; 2026 - Enciclopedia Médica Ilustrada</p>
+        <p><a href="index.html">Volver a la Página Principal</a></p>
+        <p><a href="mapa_sitio.html">Mapa del sitio</a>| <a href="accesibilidad.html">Declaración de accesibilidad</a></p>
+    </footer>
+
+</body>
+</html>
