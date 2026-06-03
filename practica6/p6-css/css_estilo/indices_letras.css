@@ -1,0 +1,57 @@
+/* ESTILOS PARA ÍNDICES ALFABÉTICOS*/
+@import url("variables.css");
+
+/* Estilo para el título de la letra (ej. "Enfermedades con la A") */
+.letra-indice {
+    font-size: 3rem;
+    color: var(--color-secundario);
+    border-bottom: 3px solid var(--color-secundario);
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+/* Contenedor de la lista */
+.lista-enfermedades {
+    list-style: none; /* Quitamos los puntos feos */
+    padding: 0;
+}
+
+/* Cada elemento de la lista */
+.lista-enfermedades li {
+    background-color: var(--color-blanco);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 5px solid transparent; /* Borde oculto que aparece al pasar el ratón */
+}
+
+/* Enlace dentro de la lista */
+.lista-enfermedades li a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Efecto hover: Al pasar el ratón por la fila */
+.lista-enfermedades li:hover {
+    transform: translateX(10px); /* Se desplaza un poquito a la derecha */
+    box-shadow: var(--sombra-suave);
+    border-left: 5px solid var(--color-secundario); /* Aparece la línea azul */
+    background-color: #f0f9ff;
+}
+
+.lista-enfermedades li a:hover {
+    color: var(--color-secundario);
+    text-decoration: none; /* Quitamos el subrayado aquí para que se vea más limpio */
+}
+
+/* Requisito de accesibilidad: Carácter Unicode como icono */
+.lista-enfermedades li a::before {
+    content: "\2794"; /* Flecha sutil (Unicode) */
+    margin-right: 15px;
+    color: var(--color-secundario);
+    font-size: 0.8em;
+}

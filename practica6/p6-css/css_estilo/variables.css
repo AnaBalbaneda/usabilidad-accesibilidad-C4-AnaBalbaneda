@@ -1,0 +1,18 @@
+/* VARIABLES GLOBALES (ESTILO MODERNO)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    /* Paleta de Colores Limpia */
+    --color-principal: #1e293b; /* Gris oscuro casi negro para leer bien */
+    --color-secundario: #0ea5e9; /* Azul cielo vibrante y moderno */
+    --color-fondo: #f1f5f9; /* Gris extra claro para el fondo de la pantalla */
+    --color-blanco: #ffffff;
+    --color-foco: #fde047; /* Amarillo para resaltar la navegación por teclado */
+    
+    /* Efectos modernos */
+    --sombra-suave: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --borde-redondeado: 12px;
+
+    /* Tipografías */
+    --fuente-principal: 'Poppins', sans-serif;
+}

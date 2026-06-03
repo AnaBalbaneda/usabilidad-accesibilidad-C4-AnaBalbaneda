@@ -1,0 +1,27 @@
+/* ESTILO: MODO NOCHE (noche.css)*/
+
+/* Sobrescribimos las variables de color con tonos oscuros */
+:root {
+    --color-principal: #e2e8f0; /* Texto gris muy clarito (casi blanco) para que se lea bien */
+    --color-secundario: #38bdf8; /* Un azul celeste más brillante para que destaque en la oscuridad */
+    --color-fondo: #0f172a; /* Fondo azul marino casi negro */
+    --color-blanco: #1e293b; /* Las tarjetas/cajas ya no son blancas, son gris oscuro */
+    --color-foco: #fde047; /* Mantenemos el amarillo para la accesibilidad del teclado */
+    
+    /* Hacemos la sombra un poco más oscura para que se note sobre el fondo negro */
+    --sombra-suave: 0 10px 15px -3px rgba(0, 0, 0, 0.5); 
+}
+
+/* Pequeños ajustes para elementos secundarios que tenían colores fijos */
+tbody tr:nth-child(even) {
+    background-color: #334155; /* Filas pares de las tablas en modo noche */
+}
+
+tbody tr:hover {
+    background-color: #475569; /* Color al pasar el ratón por la tabla */
+}
+
+.nota-informativa {
+    background-color: #334155; /* Fondo de tus notas médicas */
+    color: #e2e8f0;
+}
