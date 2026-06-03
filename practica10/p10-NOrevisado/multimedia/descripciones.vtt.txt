@@ -1,0 +1,19 @@
+1
+00:00:00.000 --> 00:00:15.000
+El cursor se mueve por la página principal mostrando el título de la Enciclopedia Médica Ilustrada y el menú superior.
+
+2
+00:00:15.000 --> 00:00:35.000
+El cursor hace clic en un artículo médico y la pantalla se desplaza hacia abajo para mostrar la estructura del texto.
+
+3
+00:00:35.000 --> 00:00:55.000
+Se abre el menú de opciones del navegador web y se activa la vista de Alto Contraste. La página cambia instantáneamente a colores oscuros.
+
+4
+00:00:55.000 --> 00:01:15.000
+La pantalla muestra la sección de guías descargables con enlaces a documentos PDF.
+
+5
+00:01:15.000 --> 00:01:30.000
+La navegación vuelve a la página de inicio y se resalta la Declaración de Accesibilidad en la parte inferior.
